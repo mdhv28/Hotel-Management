@@ -545,7 +545,7 @@ public class Main {
 
             } while (wish == 'y' || wish == 'Y');
 
-            Thread t = new Thread(new write(Hotel.hotel_ob));
+            Thread t = new Thread(new write(Hotel.hotel_ob)); //Threads allows a program to operate more efficiently by doing multiple things at the same time
             t.start();
         } catch (Exception e) {
             System.out.println("Not a valid input");
